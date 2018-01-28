@@ -1,16 +1,20 @@
 About
 ----
-Complete project responsible for tracking user, archiving his locations and sending them to the cloud (Firebase in this case).
+Complete project responsible for tracking user location, archiving and storing locations in the cloud (Firebase in this case).
 
 Purpose
 ----
-Simple training project to show especially how we can use MVVM-C pattern to create fully functionally iOS application.
+Simple training project to show especially how we can use MVVM-C pattern to create fully functional iOS application.
+
+Screen
+----
+![screen.png](https://github.com/pwlkania/Memento/blob/master/Screen.png)
 
 Used technologies and approach
 ----
 * Xcode 9.2 (9C40b)
 * Swift 4.0
-* **MVVM-C** (omitted any 3rd party libraries responsible for data binding, to make to as simple as possible),
+* **MVVM-C** (omitted any 3rd party library responsible for data binding, to make it as simple as possible),
 * CoreData,
 * CoreLocation,
 * CocoaPods (manager for 3rd party libraries),
