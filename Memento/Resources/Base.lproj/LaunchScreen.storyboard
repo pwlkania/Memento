@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bzw-k6-tMI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="world-icon" translatesAutoresizingMaskIntoConstraints="NO" id="mLd-y8-20B">
+                                <rect key="frame" x="119.5" y="108" width="136" height="156"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdn-Pa-JUg">
+                                <rect key="frame" x="154.5" y="303.5" width="66" height="126.5"/>
+                                <gestureRecognizers/>
+                                <state key="normal" image="record-data-on"/>
+                                <state key="selected" image="record-data-off"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hc7-GC-hK2">
+                                <rect key="frame" x="156.5" y="470" width="62" height="60.5"/>
+                                <state key="normal" image="upload-on-icon"/>
+                                <state key="selected" image="upload-on-icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkA-2Z-DiS">
+                                <rect key="frame" x="20" y="617" width="30" height="30"/>
+                                <state key="normal" image="settings-icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wV-Cp-m8P">
+                                <rect key="frame" x="323" y="619" width="32" height="28"/>
+                                <state key="normal" image="list-icon"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.32549019610000002" green="0.52549019610000003" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wdn-Pa-JUg" firstAttribute="centerY" secondItem="Bzw-k6-tMI" secondAttribute="centerY" multiplier="1.1" priority="750" id="05g-dU-fgv"/>
+                            <constraint firstItem="Hc7-GC-hK2" firstAttribute="top" secondItem="wdn-Pa-JUg" secondAttribute="bottom" constant="40" id="1AX-x8-Gct"/>
+                            <constraint firstItem="Hc7-GC-hK2" firstAttribute="centerY" secondItem="Bzw-k6-tMI" secondAttribute="centerY" multiplier="1.5" priority="750" id="Dcl-ZO-blz"/>
+                            <constraint firstItem="RTu-RL-9dj" firstAttribute="bottom" secondItem="8wV-Cp-m8P" secondAttribute="bottom" constant="20" id="J0c-G0-haD"/>
+                            <constraint firstItem="RkA-2Z-DiS" firstAttribute="leading" secondItem="RTu-RL-9dj" secondAttribute="leading" constant="20" id="KoO-ti-Mf4"/>
+                            <constraint firstItem="mLd-y8-20B" firstAttribute="top" secondItem="RTu-RL-9dj" secondAttribute="top" constant="88" id="QRQ-w2-RNw"/>
+                            <constraint firstItem="mLd-y8-20B" firstAttribute="centerX" secondItem="Bzw-k6-tMI" secondAttribute="centerX" id="R7d-hi-flJ"/>
+                            <constraint firstItem="wdn-Pa-JUg" firstAttribute="top" secondItem="mLd-y8-20B" secondAttribute="bottom" constant="40" id="dpf-Od-Mwk"/>
+                            <constraint firstItem="wdn-Pa-JUg" firstAttribute="centerX" secondItem="Bzw-k6-tMI" secondAttribute="centerX" id="fZ9-Ea-bi8"/>
+                            <constraint firstItem="RTu-RL-9dj" firstAttribute="trailing" secondItem="8wV-Cp-m8P" secondAttribute="trailing" constant="20" id="jQ0-cR-yDF"/>
+                            <constraint firstItem="RTu-RL-9dj" firstAttribute="bottom" secondItem="RkA-2Z-DiS" secondAttribute="bottom" constant="20" id="qzm-lW-Rsc"/>
+                            <constraint firstItem="mLd-y8-20B" firstAttribute="centerY" secondItem="Bzw-k6-tMI" secondAttribute="centerY" multiplier="0.5" priority="750" id="r3Y-D5-8jE"/>
+                            <constraint firstItem="Hc7-GC-hK2" firstAttribute="centerX" secondItem="Bzw-k6-tMI" secondAttribute="centerX" id="zOC-Kw-XYf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RTu-RL-9dj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="list-icon" width="32" height="28"/>
+        <image name="record-data-off" width="66" height="106"/>
+        <image name="record-data-on" width="66" height="106"/>
+        <image name="settings-icon" width="30" height="30"/>
+        <image name="upload-on-icon" width="62" height="47"/>
+        <image name="world-icon" width="136" height="156"/>
+    </resources>
+</document>
